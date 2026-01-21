@@ -25,6 +25,44 @@
 
 :root{
     font-family: "Momo";
-    color:dodgerblue;
+    font-weight:350;
+
+    --blue:#4563ff;
+    --beige:#f5f0e8;
+    --gutter:3rem;
+
+}
+
+body{
+    color:var(--blue);
     background:white;
+    
+}
+hgroup{
+    background:var(--beige);
+    font-weight:300;
+    font-size:2rem;
+    padding:5rem;
+
+}
+.list{
+    padding:5rem;
+    font-size:1.5rem;
+}
+.list p{
+    margin-block-end:1rem;
+}
+ul{
+
+    padding-inline:var(--gutter);
+}
+ul li{
+    margin-block:.5rem;
+}
+footer{
+    background:var(--beige);
+    padding:5rem;
+}
+em{
+    font-style:italic;
 }
