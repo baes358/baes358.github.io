@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Momo';
+    src: url('/fonts/MomoTrustSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400; /* or normal */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Momo';
+    src: url('/fonts/MomoTrustSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 300; /* or light */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Momo';
+    src: url('/fonts/MomoTrustSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500; /* or medium */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Momo';
+    src: url('/fonts/MomoTrustSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 600; /* or semi-bold */
+    font-style: normal;
+}
+
+:root{
+    font-family: "Momo";
+    color:dodgerblue;
+    background:white;
+}
