@@ -27,8 +27,8 @@
     font-family: "Momo";
     font-weight:350;
 
-    --blue:#4563ff;
-    --beige:#f5f0e8;
+    --blue:#002aff;
+    --gray:#e8e8e8;
     --gutter:3rem;
 
 }
@@ -39,7 +39,7 @@ body{
     
 }
 hgroup{
-    background:var(--beige);
+    background:var(--gray);
     font-weight:300;
     font-size:2rem;
     padding:5rem;
@@ -60,7 +60,7 @@ ul li{
     margin-block:.5rem;
 }
 footer{
-    background:var(--beige);
+    background:var(--gray);
     padding:5rem;
 }
 em{
