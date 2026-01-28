@@ -44,11 +44,21 @@ hgroup{
     background: linear-gradient(to bottom,var(--lightblue),var(--darkblue));
     font-weight:300;
     font-size:2rem;
-    padding:5rem;
+    padding-block:5rem;
     color:var(--white);
     text-align:center;
 
+    @media (925px > width > 555px) {
+        padding-inline:6rem;
+
+    }
+    @media (width >= 925px) {
+        padding-inline:8rem;
+
+    }
 }
+
+
 h1{
     text-transform:lowercase;
     font-size:3rem;
@@ -82,7 +92,7 @@ ul{
     display:flex;
     flex-direction:column;
     text-align:center;
-    /* justify-content: space-around; */
+    
     
 
 }
@@ -109,6 +119,19 @@ footer p{
 footer ul{
     flex-direction:row;
     justify-content: space-around;
+    @media (925px > width > 555px) {
+        padding-inline:6rem;
+        width:500px;
+        margin-inline:auto;
+    }
+    @media (width >= 925px) {
+        padding-inline:8rem;
+        justify-content: space-evenly;
+        width:600px;
+        margin-inline:auto;
+
+
+    }
 }
 footer ul li{
     margin-block:.5rem;
