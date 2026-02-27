@@ -1,65 +1,136 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Index</title>
+        <title>Sophia's Index</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            @import url('/reset.css') layer(reset);
-            @import url('/style.css') layer(style);
-
-        </style>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <section class="logo">
-            <img src="./assets/kr-logo-03.png" alt="">
-        </section>
-        <hgroup>
-            <h1>Index</h1>
-            <p>Sophia Bae</p>
+        <hgroup class="hero">
+            <img src="./assets/kr-logo-03.png" alt="Sophia Bae logo">
+            <p class="hero-label">Typography &amp; Interaction 2025–26</p>
+            <h1>Sophia Bae's <em>Index</em></h1>
+            <p class="hero-sub">A collection of design and code explorations at the intersection of typography, history, and the web.</p>
+            <p class="hero-scroll">Scroll</p>
         </hgroup>
-    
-        <section class="list-sec">
+        
+        <section class="context reveal">
             <p>
-                Welcome to my <em>Index</em> page for <a href="https://typography-interaction-2526.github.io/">Typography and Interaction</a>.
+                These projects were created for <a href="https://typography-interaction-2526.github.io/">Typography &amp; Interaction</a> — a year-long course in the Communication Design MPS program at Parsons, The New School. Each piece explores a different format of the web: from collaborative editorial layouts to game interface-like inventories. 
             </p>
-
-            <ul>
-                <!-- opt + shift + down to duplicate -->
-                <li>
-                    <a target="_blank" href="https://baes358.github.io/manuscript/">Manuscript</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://baes358.github.io/spread/">Spread</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://baes358.github.io/binding/">Binding</a>
-                </li>
-            </ul>
-            
         </section>
+
+
+        <section class="projects">
+            <h2 class="projects-heading reveal">Selected Projects</h2>
+
+            <article class="project reveal">
+                <a href="https://baes358.github.io/spread/" class="project-link" target="_blank">
+                    <span class="project-num">02</span>
+                    <section class="project-info">
+                        <h3 class="project-title">Spread</h3>
+                        <p class="project-desc">
+                            A collaborative editorial spread with a fellow classmate, translating a Vox feature on the gradient design trend into a richly visual web experience — strongly inspired by the mention of L.A. sunsets.
+                        </p>
+                        <span class="project-tag">Collaborative editorial</span>
+                        <span class="project-arrow">→</span>
+                    </section>
+                </a>
+            </article>
+
+
+            <article class="project reveal">
+                <a href="https://baes358.github.io/binding/" class="project-link" target="_blank">
+                    <span class="project-num">03</span>
+                    <section class="project-info">
+                        <h3 class="project-title">Binding</h3>
+                        <p class="project-desc">
+                            A digital mini-book titled "Rethinking Graphic Design History," weaving together three texts that challenge how we teach and talk about design — from style cycles to people's design to the question of hero narratives.
+                        </p>
+                        <span class="project-tag">Multi-chapter "book"</span>
+                        <span class="project-arrow">→</span>
+                    </section>
+                </a>
+            </article>
+
+
+            <article class="project reveal">
+                <a href="https://baes358.github.io/links/" class="project-link" target="_blank">
+                    <span class="project-num">04</span>
+                    <section class="project-info">
+                        <h3 class="project-title">Links</h3>
+                        <p class="project-desc">
+                            A collaborative Are.na channel explorer with Ali Salifov, reimagined as a video game inventory screen. Browse a curated archive of game UI references — filtering by image, audio, video, and text — through an interface that is itself an homage to the medium it documents.
+                        </p>
+                        <span class="project-tag">Interactive archive</span>
+                        <span class="project-arrow">→</span>
+                    </section>
+                </a>
+            </article>
+
+
+            <!-- <article class="project reveal">
+                <a href="https://baes358.github.io/manuscript/" class="project-link" target="_blank">
+                    <span class="project-num">01</span>
+                    <section class="project-info">
+                        <h3 class="project-title">Manuscript</h3>
+                        <p class="project-desc">
+                            A responsive editorial page pairing Kristen Coogan's essay on design history and aesthetic innovation with a personal reflection on how understanding the cyclical nature of style can inform one's own creative practice.
+                        </p>
+                        <span class="project-tag">Long-form article</span>
+                        <span class="project-arrow">→</span>
+                    </section>
+                </a>
+            </article> -->
+
+
+        </section>
+
+
+
+
+
+
+
         
 
-        <footer>
-            <p>
-                If you were wondering, these were created for class!
-            </p>
-            <section>
-                <p>
-                    Come find me in the real world:
-                </p>
-                <ul>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/sophiabae/">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/baes358">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="mailto:sophbaedesign@gmail.com">Email</a>
-                    </li>
-                </ul>
+        <footer class="about">
+            <section class="about-inner">
+                <section class="about-text reveal">
+                    <h2>About Sophia</h2>
+                    <p>
+                        Designer and student exploring the space where typography, interaction, and visual storytelling converge. These projects were made with care, curiosity, and a lot of code — come find me in the real world!
+                    </p>
+                </section>
+
+                <nav class="about-links reveal">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sophiabae/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/baes358" target="_blank">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="mailto:sophbaedesign@gmail.com" target="_blank">Email</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
             </section>
             
+            
         </footer>
+
+        <section class="footer-bar">
+            Typography &amp; Interaction — Sophia Bae © 2026
+        </section>
+
+        <script src="app.js"></script>
     </body>
 </html>
