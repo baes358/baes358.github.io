@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'Momo';
-    src: url('/fonts/MomoTrustSans-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
+
 
 @font-face {
     font-family: 'Calder';
@@ -80,8 +75,8 @@ em {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse 60% 50% at 20% 80%, rgba(58, 77, 184, 0.4) 0%, transparent 70%),
-        radial-gradient(ellipse 50% 60% at 80% 20%, rgba(194, 198, 255, 0.15) 0%, transparent 70%);
+        radial-gradient(ellipse 60% 50% at 20% 80%, #3a4db866 0%, transparent 70%),
+        radial-gradient(ellipse 50% 60% at 80% 20%, #c2c6ff26 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -96,7 +91,7 @@ em {
 .cloud-1 {
     width: 37.5rem;
     height: 30rem;
-    background: radial-gradient(circle, rgba(58, 77, 184, 0.8) 0%, transparent 70%);
+    background: radial-gradient(circle, #3a4db8cc 0%, transparent 70%);
     top: 55%;
     left: -15%;
     animation: drift1 14s ease-in-out infinite alternate;
@@ -105,7 +100,7 @@ em {
 .cloud-2 {
     width: 35rem;
     height: 28rem;
-    background: radial-gradient(circle, rgba(194, 198, 255, 0.5) 0%, transparent 70%);
+    background: radial-gradient(circle, #c2c6ff80 0%, transparent 70%);
     top: -15%;
     right: -10%;
     animation: drift2 16s ease-in-out infinite alternate;
@@ -114,7 +109,7 @@ em {
 .cloud-3 {
     width: 28rem;
     height: 28rem;
-    background: radial-gradient(circle, rgba(96, 98, 126, 0.6) 0%, transparent 70%);
+    background: radial-gradient(circle, #60627e99 0%, transparent 70%);
     top: 25%;
     left: 45%;
     animation: drift3 18s ease-in-out infinite alternate;
@@ -123,11 +118,13 @@ em {
 .cloud-4 {
     width: 42rem;
     height: 22rem;
-    background: radial-gradient(circle, rgba(58, 77, 184, 0.45) 0%, transparent 70%);
+    background: radial-gradient(circle, #3a4db873 0%, transparent 70%);
     bottom: -20%;
     right: 15%;
     animation: drift4 15s ease-in-out infinite alternate;
 }
+
+/* cloud transform keyframes */
 
 @keyframes drift1 {
     0%   { 
@@ -309,11 +306,11 @@ em {
 }
 
 .project {
-    border-top: 1px solid rgba(42, 47, 94, 0.1);
+    border-top: 1px solid #2a2f5e1a;
 }
 
 .project:last-child {
-    border-bottom: 1px solid rgba(42, 47, 94, 0.1);
+    border-bottom: 1px solid #2a2f5e1a;
 }
 
 .project-link {
@@ -387,7 +384,7 @@ em {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--blue);
-    background: rgba(58, 77, 184, 0.08);
+    background: #3a4db814;
     padding: 0.25em 0.7em;
     border-radius: 2px;
     margin-top: 0.3rem;
@@ -406,9 +403,7 @@ em {
 }
 
 
-/* ─────────────────────────────────────
-   ABOUT / FOOTER
-   ───────────────────────────────────── */
+/* ABOUT / FOOTER */
 
 .about {
     background: var(--blue-dark);
@@ -492,9 +487,7 @@ em {
 }
 
 
-/* ─────────────────────────────────────
-   ANIMATIONS
-   ───────────────────────────────────── */
+/* ANIMATIONS */
 
 @keyframes fadeUp {
     from {
@@ -530,9 +523,7 @@ em {
 }
 
 
-/* ─────────────────────────────────────
-   RESPONSIVE
-   ───────────────────────────────────── */
+/* RESPONSIVE */
 
 @media (min-width: 640px) {
     .about-inner {
