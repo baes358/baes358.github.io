@@ -294,8 +294,46 @@ em {
 .sidebar {
     display:flex;
     flex-direction:column;
+    align-items:flex-end;
+    gap:2rem;
+    
 }
+.sidebar-nav{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:0.5rem;
+}
+.nav-pill{
+    display:inline-block;
+    font-family:'Laus-400',sans-serif;
+    font-size:.9rem;
+    letter-spacing:.05em;
+    color:var(--text--navy);
+    background:var(--button-gray);
+    border-radius:5rem;
+    padding:.5em 1em;
+    transition: background .2s ease;
+}
+.nav-pill:hover{
+    background:var(--button-click);
+    font-family:'Laus-500',sans-serif;
+}
+.sidebar-info{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    text-align:right;
 
+}
+.sidebar-desc{
+    font-family:'Laus-400',sans-serif;
+    font-size:.9rem;
+    line-height:1.4;
+    color:var(--text-navy);
+    max-width:15rem;
+
+}
 
 
 
@@ -381,15 +419,7 @@ em {
     color: var(--blue-light);
 }
 
-.footer-bar {
-    background: var(--text);
-    color: var(--blue-muted);
-    text-align: center;
-    padding: 1.5rem 2rem;
-    font-size: 0.75rem;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
+
 
 
 /* ANIMATIONS */
