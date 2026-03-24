@@ -53,13 +53,8 @@
     --text-navy: #31313C;
     --heading-fill: #006AFF;
     --heading-stroke:#000000;
-
-    --blue-light: #c2c6ff;
-    --blue-muted: #8b90c4;
-    --blue-dark: #2a2f5e;
-    --surface: #f4f4f8;
     --white: #eeeeee;
-    --text: #1a1a2e;
+
 }
 
 html {
@@ -128,11 +123,12 @@ em {
 }
 
 .hero-label {
+    font-family: "Laus-400";
     font-size: 0.75rem;
-    font-weight: 500;
+    -webkit-text-stroke: .09px var(--heading-stroke);
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--blue-light);
+    color: var(--heading-fill);
     margin-bottom: 1.5rem;
     opacity: 0;
     animation: fadeUp 0.8s ease 0.15s forwards;
@@ -159,7 +155,7 @@ em {
 }
 
 .hero h1 em {
-    color: var(--blue-light);
+    color: var(--heading-fill);
 }
 
 .hero-sub {
