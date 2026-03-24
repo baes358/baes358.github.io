@@ -1,12 +1,4 @@
 
-
-@font-face {
-    font-family: 'Calder';
-    src: url('/fonts/Calder-LC.otf') format('opentype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-
 @font-face {
     font-family: 'Laus-200';
     src: url('/fonts/TWKLausanne-200.ttf') format('truetype');
@@ -72,6 +64,8 @@ body {
     background: var(--white);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    height:100vh;
+    min-width: 100vh;
 }
 
 a {
@@ -87,7 +81,7 @@ em {
 /* HERO */
 
 .hero {
-    width:100%;
+    width:100vh;
     display:block;
 
 }
@@ -190,8 +184,8 @@ em {
 .main-grid{
     display:grid;
     grid-template-columns:1fr auto;
-    align-items:start;
-    padding:3rem 3rem 4rem;
+    align-items:end;
+    padding:1.5rem;
     gap: 4rem;
     margin:0 auto;
 }
