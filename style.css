@@ -292,34 +292,46 @@ em {
     margin-top: 0.3rem;
 }
 
+.project-blurb {
+    position: relative;
+}
+
+.project-tag,
+.project-desc {
+    margin: 0;
+    transition: opacity 0.3s ease, max-height 0.45s ease;
+}
+
 .project-tag {
     font-family:"Laus-400";
     font-size:.9rem;
     color:var(--section-blue)
 }
 
-/* .project-desc {
+.project-desc {
     font-size: 0.9rem;
-    font-weight: 300;
-    color: var(--blue-muted);
     line-height: 1.5;
+    color: var(--text-navy); /* or your muted token */
     max-width: 520px;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.5s ease, opacity 0.4s ease, margin 0.4s ease;
-} */
-
-/* .project-arrow {
-    font-size: 1.5rem;
-    color: var(--blue-light);
-    transition: transform 0.4s ease, color 0.4s ease;
-} */
-
-.project-link:hover .project-arrow {
-    transform: translateX(6px);
-    color: var(--section-blue);
 }
+.project a:hover .project-desc,
+.project a:focus-within .project-desc {
+    max-height: 12rem; /* large enough for longest paragraph; tune or use a bigger value */
+    opacity: 1;
+    margin-top: 0.35rem;
+}
+/* .project a:hover .project-tag,
+.project a:focus-within .project-tag {
+    opacity: 0;
+    
+} */
+
+
+
+
 
 
 
