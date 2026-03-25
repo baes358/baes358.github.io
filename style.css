@@ -228,14 +228,62 @@ em {
     cursor: pointer;
 }
 
-.project-icon{
-    width:4rem;
-    height:4rem;
-    object-fit:contain;
-    flex-shrink:0;
-    animation:spin 8s linear infinite;
+.project-icon-outer {
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    animation: spin 8s linear infinite;
 }
 
+.project-icon-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.25s ease;
+}
+
+.project a:hover .project-icon-inner,
+.project a:focus-within .project-icon-inner {
+    transform: scale(1.1);
+}
+
+.project-icon-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.25s ease;
+}
+
+.project-icon-img--hover {
+    opacity: 0;
+}
+
+.project a:hover .project-icon-img--default,
+.project a:focus-within .project-icon-img--default {
+    opacity: 0;
+}
+
+.project a:hover .project-icon-img--hover,
+.project a:focus-within .project-icon-img--hover {
+    opacity: 1;
+}
+
+.project a:hover .project-icon-outer,
+.project a:focus-within .project-icon-outer {
+    animation-play-state: paused;
+}
+
+
+
+
+
+
+
+/* offset animation */
 .projects .project:nth-child(1) .project-icon {
     animation-delay: 0s; 
 }
@@ -259,7 +307,7 @@ em {
 }
 
 .project a:hover .project-icon {
-    animation-play-state: paused;
+    animation-play-state:paused;
 }
 
 
