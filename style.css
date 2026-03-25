@@ -51,6 +51,7 @@
 
 html {
     scroll-behavior: smooth;
+    height:100%;
 }
 @media (780px <= width <= 1280px) {
 
@@ -63,9 +64,15 @@ body {
     color: var(--text-navy);
     background: var(--white);
     overflow-x: hidden;
+    
     -webkit-font-smoothing: antialiased;
-    height:100vh;
-    min-width: 100vh;
+
+    height: 100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
 }
 
 a {
@@ -81,9 +88,9 @@ em {
 /* HERO */
 
 .hero {
-    width:100vh;
-    display:block;
-
+    width: 100vw;
+    /* max-width: 100; */
+    display: block;
 }
 
 
@@ -187,7 +194,9 @@ em {
     align-items:end;
     padding:1.5rem;
     gap: 4rem;
-    margin:0 auto;
+    margin-block-start:auto;
+    margin:0;
+    
 }
 
 
