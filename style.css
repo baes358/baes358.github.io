@@ -1,43 +1,33 @@
 
 @font-face {
-    font-family: 'Laus-200';
-    src: url('/fonts/TWKLausanne-200.ttf') format('truetype');
-    font-weight:200;
+    font-family: 'Overused';
+    src: url('/fonts/OverusedGrotesk-Roman.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Laus-300';
-    src: url('/fonts/TWKLausanne-300.ttf') format('truetype');
-    font-weight:300;
+    font-family: 'Overused-Italic';
+    src: url('/fonts/OverusedGrotesk-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Overused-Medium';
+    src: url('/fonts/OverusedGrotesk-Medium.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Laus-400';
-    src: url('/fonts/TWKLausanne-400.ttf') format('truetype');
-    font-weight:400;
+    font-family: 'Overused-MI';
+    src: url('/fonts/OverusedGrotesk-MediumItalic.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Laus-500';
-    src: url('/fonts/TWKLausanne-500.ttf') format('truetype');
-    font-weight:500;
+    font-family: 'Overused-Light';
+    src: url('/fonts/OverusedGrotesk-Light.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Laus-600';
-    src: url('/fonts/TWKLausanne-600.ttf') format('truetype');
-    font-weight:600;
-}
-@font-face {
-    font-family: 'Laus-700';
-    src: url('/fonts/TWKLausanne-700.ttf') format('truetype');
-    font-weight:700;
-}
-@font-face {
-    font-family: 'Laus-800';
-    src: url('/fonts/TWKLausanne-800.ttf') format('truetype');
-    font-weight:800;
+    font-family: 'Overused-LI';
+    src: url('/fonts/OverusedGrotesk-LightItalic.ttf') format('truetype');
 }
 
 
 :root {
-    font-family: 'Laus-300', sans-serif;
+    font-family: 'Overused', sans-serif;
 
     --section-blue: #384A89;
     --button-gray: #D5DAE1;
@@ -116,7 +106,7 @@ em {
 }
 
 .hero-label {
-    font-family: "Laus-400";
+    font-family: "Overused-Medium";
     font-size: 0.75rem;
     -webkit-text-stroke: .09px var(--heading-stroke);
     letter-spacing: 0.2em;
@@ -321,7 +311,7 @@ em {
 }
 
 .project-title {
-    font-family:"Laus-500", sans-serif;
+    font-family:"Overused-Medium", sans-serif;
     font-size:  1.25rem;
     color:var(--text-navy);
     line-height: 1.2;
