@@ -35,7 +35,7 @@
     --text-navy: #31313C;
     --heading-fill: #006AFF;
     --heading-stroke:#000000;
-    --white: #eeeeee;
+    --white: #fafafa;
 
 }
 
@@ -85,25 +85,37 @@ em {
 
 
 
-.hero-logo {
-    /* max-width: 100vw; */
-    /* height: 3rem; */
-    margin-bottom: 2.5rem;
+.hero-logo-wrap {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 100;
     opacity: 0;
     animation: fadeUp 0.8s ease forwards;
-
 }
 
-@media (780px <= width <= 1280px) {
-    .hero-logo {
-        /* max-width: 30%; */
-    }
+.hero-logo {
+    display: block;
+    transition: opacity 0.25s ease;
 }
-@media (width > 1280px) {
-    .hero-logo {
-        /* max-width: 20%; */
-    }
+
+.hero-logo--hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
 }
+
+.hero-logo-wrap:hover .hero-logo--default {
+    opacity: 0;
+}
+
+.hero-logo-wrap:hover .hero-logo--hover {
+    opacity: 1;
+}
+
 
 .hero-label {
     font-family: "Overused-Medium";
@@ -341,14 +353,14 @@ em {
 }
 
 .project-tag {
-    font-family:"Laus-400";
+    font-family:"Overused-Medium";
     font-size:.9rem;
     color:var(--section-blue)
 }
 
 .project-desc {
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.3;
     color: var(--text-navy); /* or your muted token */
     max-width: 520px;
     max-height: 0;
@@ -393,8 +405,8 @@ em {
 }
 .nav-pill{
     display:inline-block;
-    font-family:'Laus-400',sans-serif;
-    font-size:.9rem;
+    font-family:'Overused-Medium',sans-serif;
+    font-size:1rem;
     letter-spacing:.05em;
     color:var(--text--navy);
     background:var(--button-gray);
@@ -404,7 +416,7 @@ em {
 }
 .nav-pill:hover{
     background:var(--button-click);
-    font-family:'Laus-500',sans-serif;
+    font-family:'Overused',sans-serif;
 }
 .sidebar-info{
     display:flex;
@@ -414,9 +426,9 @@ em {
 
 }
 .sidebar-desc{
-    font-family:'Laus-400',sans-serif;
-    font-size:.9rem;
-    line-height:1.4;
+    font-family:'Overused',sans-serif;
+    font-size:1rem;
+    line-height:1.3;
     color:var(--text-navy);
     max-width:15rem;
 
